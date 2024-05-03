@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
+}
+
+/* @keyframes textAnimation {
+    0% { opacity: 0; transform: translateY(-20px); }
+    25% { opacity: 1; transform: translateY(0); }
+    75% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 2; transform: translateY(20px); }
+  } */
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+        z-index: 99; /* ensure it's above the video */
+    }
+     
+    .navbar nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .navbar nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+        color: white;
+    }
+  
+
+    .screen-2 {
+        font-size: 25px;
+        color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Ensure relative positioning for child elements */
+        width: 100%;
+        height: 100vh; /* Adjust height as needed */
+        background-color: #0b0909; /* Background color for the slide */
+         /* Initially hide the slide */
+        z-index: 1;
+        }
+
+        .heads{
+
+            opacity: 0;
+            margin-top: 5rem;
+            padding: 5rem;
+           display: flex;
+           justify-content: center;
+           
+        }
+        .para{
+            opacity: 0;
+            padding: 5rem;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center; 
+        }
+
+    .screen-2>img{
+
+        z-index: -1;
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+
+    
+    #canvas {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* border: 10px red solid; */
+        height: 100vh;
+        width: 100%;
+        z-index: 9;
+        /* Add any other styles for the canvas element */
+    }
+    
+    #mute-button {
+        border-radius: 20px;
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        z-index: 1; /* Ensure the button appears over the video */
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+        color: black;
+        border: none;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+
+    .loading-screen {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         font-size: 40px;
+        color: #f2f2f2;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .loading-screen video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+.text {
+    opacity: 0;
+    /* animation: textAnimation 5s ease-in-out forwards; */
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure animation is in front */
+  }
+
+  #text-p{
+    width: 90%;
+    opacity: 0;
+    /* animation: textAnimation 5s ease-in-out forwards; */
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+  }
+
+  .text-p,span{
+    color: #FFA500;
+  }
+
+  .Aboutus{
+    font-size: 25px;
+        color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;  
+        width: 100%;
+        height: 100vh; /* Adjust height as needed */
+        z-index: 1;
+         /* Initially hide the slide */
+         
+  }
+
+  .Aboutus video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.t1,.t2,.t3,.t4{
+    opacity: 0;
+    padding: 1rem;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center; 
+}
